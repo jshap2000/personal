@@ -22,6 +22,12 @@ document.getElementById('back3').addEventListener("click", function(event){
             document.getElementById('loaded_about').hidden = 'hidden';
             document.getElementById('loaded_resume').hidden = 'hidden';
             document.getElementById('loaded_projects').hidden = 'hidden';
+            document.getElementById('work_info').hidden = 'hidden';
+            document.getElementById('skills_info').hidden = 'hidden';
+            document.getElementById('education_info').hidden = 'hidden';
+            document.getElementById('honors_info').hidden = 'hidden';
+            document.getElementById('personal_info').hidden = 'hidden';
+            document.getElementById('school_info').hidden = 'hidden';
             document.getElementById('hi').innerHTML = 'Hi!';
 
 }, false);
@@ -104,7 +110,7 @@ document.getElementById('honors_clicked').addEventListener("click", function(eve
 
 
 document.getElementById('body').addEventListener("mousemove", function(event){
-	showCoords(event);
+    showCoords(event);
 }, false);
 
 //document.getElementById('background').style.backgroundColor = "rgb(" + 200 + ",10,100)";

@@ -1,5 +1,6 @@
 #education_info {
 	padding-bottom: 150px;
+
 }
 
 #work_info {
@@ -13,6 +14,7 @@
 
 .page {
 	font-size: large;
+	cursor: pointer;
 }
 
 #pic {
@@ -24,12 +26,14 @@
 	font-size: large;
 	display: inline;
 	font-weight:normal;
+	cursor: pointer;
 }
 
 #work_clicked {
 	font-size: large;
 	display: inline;
 	font-weight:normal;
+	cursor: pointer;
 }
 
 
@@ -41,12 +45,14 @@
 	font-size: large;
 	display: inline;
 	font-weight:normal;
+	cursor: pointer;
 }
 
 #honors_clicked {
 	font-size: large;
 	display: inline;
 	font-weight:normal;
+	cursor: pointer;
 }
 
 #josh {
@@ -125,9 +131,10 @@
 }
 
 #back3 {
-	margin-left: 91%;
+	margin-left: 3%;
 	height:100%;
 	visibility: hidden;
+	cursor: pointer;
 }
 
 #description {
@@ -152,12 +159,14 @@
 	font-size: large;
 	display: inline;
 	font-weight:normal;
+	cursor: pointer;
 }
 
 #personal {
 	font-size: large;
 	display: inline;
 	font-weight:normal;
+	cursor: pointer;
 }
 
 #loaded_contact {
