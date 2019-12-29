@@ -1,0 +1,165 @@
+#education_info {
+	padding-bottom: 150px;
+}
+
+#work_info {
+	padding-bottom: 20px;
+}
+
+#skills_info {
+	padding-bottom: 120px;
+}
+
+
+.page {
+	font-size: large;
+}
+
+#pic {
+	align-content: center;
+	align-self: center;
+}
+
+#education_clicked {
+	font-size: large;
+	display: inline;
+	font-weight:normal;
+}
+
+#work_clicked {
+	font-size: large;
+	display: inline;
+	font-weight:normal;
+}
+
+
+
+
+
+
+#skills_clicked {
+	font-size: large;
+	display: inline;
+	font-weight:normal;
+}
+
+#honors_clicked {
+	font-size: large;
+	display: inline;
+	font-weight:normal;
+}
+
+#josh {
+	max-width: 100%;
+    max-height: 100%;
+}
+
+#washu {
+	max-width: 100%;
+    max-height: 100px;
+}
+
+.divider {
+	color:black;
+}
+
+.resume_info {
+	max-width: 100%;
+    max-height: 100px;
+	
+}
+
+.resume_chars {
+	max-width: 200%;
+	
+}
+
+.col-sm-4 {
+	align-content: center;
+}
+#realpic {
+	align-content: right
+}
+#back {
+	margin-left: 20%
+}
+
+#res1 {
+	width:105%;
+}
+
+#res2 {
+	width:105%;
+}
+
+#github {
+	text-align: right;
+	height: 35%;
+	width: 35%
+}
+
+#phone {
+	height: 15%;
+	width: 15%
+}
+
+#email {
+	height:25%;
+	width: 18%;
+}
+
+#github {
+	height: 17%;
+	width: 17%
+}
+
+#hi {
+	
+	font-size:x-large;
+	margin-left: 23%;
+	margin-top: : 45%;
+	font-weight:normal;
+}
+#back2 {
+	margin-left: 55%;
+}
+
+#back3 {
+	margin-left: 91%;
+	height:100%;
+	visibility: hidden;
+}
+
+#description {
+	display: inline;
+}
+
+#background {
+	background-image: url('try7.png');
+	background-color: white;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-top-color:purple;
+	border-bottom-color:purple;
+	border-radius: 5px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+
+}
+
+
+#school {
+	font-size: large;
+	display: inline;
+	font-weight:normal;
+}
+
+#personal {
+	font-size: large;
+	display: inline;
+	font-weight:normal;
+}
+
+#loaded_contact {
+
+}
