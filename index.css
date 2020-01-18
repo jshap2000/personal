@@ -122,8 +122,6 @@
 #hi {
 	
 	font-size:x-large;
-	margin-left: 23%;
-	margin-top: : 45%;
 	font-weight:normal;
 }
 #back2 {
@@ -142,13 +140,12 @@
 }
 
 #background {
-	background-image: url('try7.png');
+	background-image: url('try9.png');
 	background-color: white;
 	background-size: cover;
 	background-repeat: no-repeat;
-	border-top-color:purple;
-	border-bottom-color:purple;
-	border-radius: 5px;
+	border-top-color:orange;
+	border-bottom-color:orange;
 	border-top-style: solid;
 	border-bottom-style: solid;
 
