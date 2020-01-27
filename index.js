@@ -7,6 +7,7 @@ document.getElementById('about').addEventListener("click", function(event){
             document.getElementById('loaded_about').hidden = '';
             document.getElementById('loaded_contact').hidden = 'hidden';
             document.getElementById('loaded_resume').hidden = 'hidden';
+            document.getElementById('food').hidden = 'hidden';
             document.getElementById('hi').innerHTML = 'About';
 
 }, false);
@@ -17,6 +18,7 @@ document.getElementById('back3').addEventListener("click", function(event){
             document.getElementById('contact').hidden = '';
             document.getElementById('projects').hidden = '';
             document.getElementById('about').hidden = '';
+            document.getElementById('food').hidden = '';
             document.getElementById('back3').style.visibility = 'hidden';
             document.getElementById('loaded_contact').hidden = 'hidden';
             document.getElementById('loaded_about').hidden = 'hidden';
@@ -36,6 +38,7 @@ document.getElementById('resume').addEventListener("click", function(event){
             document.getElementById('about').hidden = 'hidden';
             document.getElementById('resume').hidden = 'hidden'
             document.getElementById('contact').hidden = 'hidden';
+            document.getElementById('food').hidden = 'hidden';
             document.getElementById('projects').hidden = 'hidden';
             document.getElementById('back3').style.visibility = 'visible';
             document.getElementById('loaded_contact').hidden = 'hidden';
@@ -47,6 +50,7 @@ document.getElementById('resume').addEventListener("click", function(event){
 document.getElementById('contact').addEventListener("click", function(event){
             document.getElementById('about').hidden = 'hidden';
             document.getElementById('resume').hidden = 'hidden';
+            document.getElementById('food').hidden = 'hidden';
             document.getElementById('projects').hidden = 'hidden';
             document.getElementById('contact').hidden = 'hidden';
             document.getElementById('back3').style.visibility = 'visible';
@@ -61,6 +65,7 @@ document.getElementById('projects').addEventListener("click", function(event){
             document.getElementById('resume').hidden = 'hidden';
             document.getElementById('projects').hidden = 'hidden';
             document.getElementById('contact').hidden = 'hidden';
+            document.getElementById('food').hidden = 'hidden';
             document.getElementById('back3').style.visibility = 'visible';
             document.getElementById('loaded_projects').hidden = '';
             document.getElementById('loaded_about').hidden = 'hidden';
@@ -107,7 +112,9 @@ document.getElementById('honors_clicked').addEventListener("click", function(eve
             document.getElementById('education_info').hidden = 'hidden';
 }, false);
 
-
+document.getElementById('food').addEventListener("click", function(event){
+    window.location.href = "reviews.html";
+}, false);
 
 document.getElementById('body').addEventListener("mousemove", function(event){
     showCoords(event);
