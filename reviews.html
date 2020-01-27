@@ -1,0 +1,69 @@
+<html>
+<head>
+	<title>Food Fun!</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+        }
+        .center-fit {
+
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+
+        h3 {
+        	display:inline;
+        	padding: 10;
+
+        }
+
+        #letters {
+        	text-align: center;
+        	font-family: 'arial'
+        }
+        #recent {
+			border-left-style: solid;
+			border-right-style: solid;	
+		}
+
+    </style>
+</head>
+<body>
+<div hidden='hidden'>
+<div class="imgbox">
+    <img class="center-fit" src='stl.png'>
+</div>
+<div id = 'reviews'>
+	<div class="col-sm-6" id ='recent'>
+	<br>
+      <h4 id='recent_name'></h3>
+      <p id='recent_date'></p>
+      <p id='recent_content'></p>
+    </div>
+    <div class="col-sm-6" id = 'all'>
+    	<br>
+      <h3>All Reviews</h3>
+      	<br>
+    </div>
+    <div id = "ind_review">
+    </div>
+</div>
+</div>
+
+
+
+
+
+</body>
+<script src='reviews.js'></script>
+</html>
