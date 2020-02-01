@@ -8,7 +8,7 @@ document.getElementById('about').addEventListener("click", function(event){
             document.getElementById('loaded_about').hidden = '';
             document.getElementById('loaded_contact').hidden = 'hidden';
             document.getElementById('loaded_resume').hidden = 'hidden';
-            document.getElementById('hi').innerHTML = 'About';
+            document.getElementById('hi').innerHTML = 'Q & A with myself (Josh)';
 
 }, false);
 
