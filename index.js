@@ -137,7 +137,11 @@ for(var i = 0; i < review_name.length; i++) {
     newNode.innerHTML = review_name[i];
     newNode.id = i;
     newNode.addEventListener("click", function(event){
-            document.getElementById('recent_name').innerHTML = "Review - "+ review_name[this.id];
+    		if(this.id == review_name.length-1) {
+            document.getElementById('recent_name').innerHTML = "Recent Review - "+ review_name[this.id];
+        } else {
+        	document.getElementById('recent_name').innerHTML = "Review - "+ review_name[this.id];
+        }
 			document.getElementById('recent_date').innerHTML = "Date: "+review_date[this.id];
 			document.getElementById('recent_content').innerHTML = review_content[this.id];
 }, false);
