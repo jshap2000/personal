@@ -116,14 +116,14 @@ document.getElementById('honors_clicked').addEventListener("click", function(eve
 
 
 document.getElementById('food_clicked').addEventListener("click", function(event){
-    var review_name = ["Sultan Mediterranean Restaurant"];
-var review_date = ["January 25th, 2020"];
-var review_content = ["Tucked away on a quiet corner of Manchester Avenue, Sultan Mediterranean Restaurant serves up some of the best Turkish food in St. Louis. Ravenous foodies will find value across the menu, from Sultan’s superb falafel and pita, to its hearty Lamb Pilau. The Pilau - flanked by plenty of tzatziki - is the size of a football, and arrives shrouded in a thin layer of flaky, light phyllo. Still, the star of the show at Sultan is undeniably the Munto. The fluffy pasta - filled with ground beef and drowned in yogurt and spicy tomato sauce – is fusion at its finest. A hybrid of Italian and Turkish cuisines, the Munto boasts a pleasant, chewy texture, and is aided by the copious splashes of cool yogurt. Service is very polished and courteous. And the restaurant, despite its growing popularity locally, feels warm and welcoming. Within St. Louis’s rapidly growing ethnic food scene, Sultan Mediterranean Restaurant stands out as a beacon of excellence."];
+    var review_name = ["Sultan Mediterranean Restaurant", "Chao Baan"];
+var review_date = ["January 25th, 2020", "February 23rd, 2020"];
+var review_content = ["Tucked away on a quiet corner of Manchester Avenue, Sultan Mediterranean Restaurant serves up some of the best Turkish food in St. Louis. Ravenous foodies will find value across the menu, from Sultan’s superb falafel and pita, to its hearty Lamb Pilau. The Pilau - flanked by plenty of tzatziki - is the size of a football, and arrives shrouded in a thin layer of flaky, light phyllo. Still, the star of the show at Sultan is undeniably the Munto. The fluffy pasta - filled with ground beef and drowned in yogurt and spicy tomato sauce – is fusion at its finest. A hybrid of Italian and Turkish cuisines, the Munto boasts a pleasant, chewy texture, and is aided by the copious splashes of cool yogurt. Service is very polished and courteous. And the restaurant, despite its growing popularity locally, feels warm and welcoming. Within St. Louis’s rapidly growing ethnic food scene, Sultan Mediterranean Restaurant stands out as a beacon of excellence.", "Looks can be misleading. Despite its trendy, chic interior, Chao Baan is a masterclass in execution and authenticity. The hipster joint churns out authentic regional Thai cuisine in large portions and at extremely affordable prices. The Mieng Kham - green leaf wraps filled with shrimp, ginger and lime among other ingredients- pack a powerful punch. The Mieng Kham also features notes of coconut - which helps offset the dish of sweet and satisfyingly spicy chilly paste served alongside the wraps. Of the two entrees we ordered, the Green Curry stood out as being especially flavorful - the combination of spices, tender eggplant, and marinated chicken made for mouth-watering bites. Not far behind was the Kua Kling - beef stir fried in spicy curry paste. Both dishes went well with the accompanying Jasmine rice. It was a pleasure to dine at Chao Baan; I can’t wait to return and try more!"];
 var review_photos = [[]];
 
-document.getElementById('recent_name').innerHTML = "Recent Review - "+ review_name[0];
-document.getElementById('recent_date').innerHTML = "Date: "+review_date[0];
-document.getElementById('recent_content').innerHTML = review_content[0];
+document.getElementById('recent_name').innerHTML = "Recent Review - "+ review_name[review_name.length-1];
+document.getElementById('recent_date').innerHTML = "Date: "+review_date[review_name.length-1];
+document.getElementById('recent_content').innerHTML = review_content[review_name.length-1];
 document.getElementById('reviewertime').hidden='';
 document.getElementById('back3').hidden='hidden';
 document.getElementById('background').hidden='hidden';
@@ -135,6 +135,12 @@ document.getElementById('food_clicked').hidden='hidden';
 for(var i = 0; i < review_name.length; i++) {
     var newNode = document.createElement('h5');
     newNode.innerHTML = review_name[i];
+    newNode.id = i;
+    newNode.addEventListener("click", function(event){
+            document.getElementById('recent_name').innerHTML = "Review - "+ review_name[this.id];
+			document.getElementById('recent_date').innerHTML = "Date: "+review_date[this.id];
+			document.getElementById('recent_content').innerHTML = review_content[this.id];
+}, false);
     document.getElementById('all').appendChild(newNode);
 }
 
